@@ -1,0 +1,66 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  margin: 0;
+}
+
+#datetime-picker {
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 250px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+button[data-start] {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 40px;
+}
+
+button[data-start]:disabled {
+  background-color: #c1c1c1;
+  cursor: not-allowed;
+}
+
+.timer {
+  display: flex;
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  min-width: 90px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.value {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+}
+
+.label {
+  font-size: 14px;
+  color: #777;
+  margin-top: 8px;
+}
